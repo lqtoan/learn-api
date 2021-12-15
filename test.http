@@ -1,8 +1,0 @@
-@baseUrl = http://localhost:3000/api
-
-#
-GET {{baseUrl}}/categories
-###
-#
-GET {{baseUrl}}/products
-###

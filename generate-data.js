@@ -29,8 +29,9 @@ const randomProductList = (categoryList, numberOfProducts) => {
         categoryId: category.id,
         id: faker.datatype.uuid(),
         name: faker.commerce.productName(),
-        price: faker.commerce.price(),
+        price: Number.parseFloat(faker.commerce.price()),
         createdAt: Date.now(),
+        imgUrl: faker.image.image(),
       };
       productList.push(product);
     });

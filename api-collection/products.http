@@ -1,0 +1,11 @@
+@baseUrl=http://localhost:3000/api
+
+#
+GET {{baseUrl}}/products
+###
+#
+GET {{baseUrl}}/products?price_lte=200
+###
+#
+GET {{baseUrl}}/products?_page=1&_limit=8
+###
