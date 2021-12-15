@@ -1,1 +1,166 @@
-{"categories":[{"id":"ef8d599c-4764-4598-923a-d5777751cad5","name":"Kids","createdAt":1639562046736},{"id":"f3d43382-a225-41b1-91e7-5ca07f5090a9","name":"Clothing","createdAt":1639562046736},{"id":"4742072e-592c-4c4f-aa22-c80e8ca717e1","name":"Toys","createdAt":1639562046736},{"id":"4d405e5e-3e72-43a6-aa41-b86954f963ae","name":"Sports","createdAt":1639562046736}],"products":[]}
+{
+  "categories": [
+    {
+      "id": "67e95605-28d1-43a6-b597-ffb009898db2",
+      "name": "Games",
+      "createdAt": 1639570862032
+    },
+    {
+      "id": "ecbe5d31-7055-4d3c-9a8d-94599062cb9b",
+      "name": "Shoes",
+      "createdAt": 1639570862032
+    },
+    {
+      "id": "5dcaec00-1c79-4bda-8596-6c5c19a4d8da",
+      "name": "Music",
+      "createdAt": 1639570862032
+    },
+    {
+      "id": "6fb109fc-2995-42f9-a5cd-51b3ba498530",
+      "name": "Industrial",
+      "createdAt": 1639570862032
+    }
+  ],
+  "products": [
+    {
+      "categoryId": "67e95605-28d1-43a6-b597-ffb009898db2",
+      "id": "9518af10-98f2-4670-a37e-6de714f21f22",
+      "name": "Licensed Rubber Keyboard",
+      "price": "474.00",
+      "createdAt": 1639570862032
+    },
+    {
+      "categoryId": "67e95605-28d1-43a6-b597-ffb009898db2",
+      "id": "1c9977ea-cfc8-4e4f-bd6a-54f1fa0500ff",
+      "name": "Gorgeous Rubber Sausages",
+      "price": "821.00",
+      "createdAt": 1639570862032
+    },
+    {
+      "categoryId": "67e95605-28d1-43a6-b597-ffb009898db2",
+      "id": "118030ef-dc64-49e3-940d-8476b939670e",
+      "name": "Practical Wooden Bike",
+      "price": "761.00",
+      "createdAt": 1639570862032
+    },
+    {
+      "categoryId": "67e95605-28d1-43a6-b597-ffb009898db2",
+      "id": "13e5cdb6-1f13-45e0-a7fb-98e777717f4d",
+      "name": "Sleek Concrete Mouse",
+      "price": "124.00",
+      "createdAt": 1639570862032
+    },
+    {
+      "categoryId": "67e95605-28d1-43a6-b597-ffb009898db2",
+      "id": "87693ae4-e3b0-4b47-99f8-e992fc79222b",
+      "name": "Generic Plastic Keyboard",
+      "price": "973.00",
+      "createdAt": 1639570862032
+    },
+    {
+      "categoryId": "ecbe5d31-7055-4d3c-9a8d-94599062cb9b",
+      "id": "b675b5c9-9236-422e-8f9b-2d9fef4bf7b5",
+      "name": "Unbranded Concrete Car",
+      "price": "405.00",
+      "createdAt": 1639570862033
+    },
+    {
+      "categoryId": "ecbe5d31-7055-4d3c-9a8d-94599062cb9b",
+      "id": "e74229e2-d22f-461f-abd9-1522ad2e933c",
+      "name": "Generic Cotton Ball",
+      "price": "772.00",
+      "createdAt": 1639570862033
+    },
+    {
+      "categoryId": "ecbe5d31-7055-4d3c-9a8d-94599062cb9b",
+      "id": "5c6d9147-1ffa-431b-a73a-386319dca6c5",
+      "name": "Fantastic Concrete Salad",
+      "price": "834.00",
+      "createdAt": 1639570862033
+    },
+    {
+      "categoryId": "ecbe5d31-7055-4d3c-9a8d-94599062cb9b",
+      "id": "a1cddabf-ac8d-49a0-b5c3-29d1b3ed8406",
+      "name": "Generic Frozen Ball",
+      "price": "428.00",
+      "createdAt": 1639570862033
+    },
+    {
+      "categoryId": "ecbe5d31-7055-4d3c-9a8d-94599062cb9b",
+      "id": "c5f09598-1c31-4c3f-bfb1-af1258e9b0ec",
+      "name": "Fantastic Plastic Ball",
+      "price": "588.00",
+      "createdAt": 1639570862033
+    },
+    {
+      "categoryId": "5dcaec00-1c79-4bda-8596-6c5c19a4d8da",
+      "id": "cd6e0449-92ff-4bc4-aab0-59b8cc06ecd9",
+      "name": "Handcrafted Fresh Bike",
+      "price": "957.00",
+      "createdAt": 1639570862033
+    },
+    {
+      "categoryId": "5dcaec00-1c79-4bda-8596-6c5c19a4d8da",
+      "id": "3329af50-dfd4-415b-b461-3d163a29eefe",
+      "name": "Sleek Metal Shoes",
+      "price": "114.00",
+      "createdAt": 1639570862033
+    },
+    {
+      "categoryId": "5dcaec00-1c79-4bda-8596-6c5c19a4d8da",
+      "id": "22aef9f5-ac77-498a-a455-28f14723397a",
+      "name": "Sleek Wooden Hat",
+      "price": "951.00",
+      "createdAt": 1639570862033
+    },
+    {
+      "categoryId": "5dcaec00-1c79-4bda-8596-6c5c19a4d8da",
+      "id": "57a7e2ce-52d2-4eb0-aadb-50831e42cb5f",
+      "name": "Tasty Metal Table",
+      "price": "141.00",
+      "createdAt": 1639570862033
+    },
+    {
+      "categoryId": "5dcaec00-1c79-4bda-8596-6c5c19a4d8da",
+      "id": "854566cb-e408-4abc-8448-653076b33607",
+      "name": "Ergonomic Wooden Shirt",
+      "price": "300.00",
+      "createdAt": 1639570862033
+    },
+    {
+      "categoryId": "6fb109fc-2995-42f9-a5cd-51b3ba498530",
+      "id": "28da16b1-7824-4b2d-8213-d8272a05044f",
+      "name": "Fantastic Rubber Computer",
+      "price": "327.00",
+      "createdAt": 1639570862033
+    },
+    {
+      "categoryId": "6fb109fc-2995-42f9-a5cd-51b3ba498530",
+      "id": "f318fb51-7a32-4519-b6a5-af6ec8ecf2eb",
+      "name": "Handmade Frozen Chair",
+      "price": "82.00",
+      "createdAt": 1639570862033
+    },
+    {
+      "categoryId": "6fb109fc-2995-42f9-a5cd-51b3ba498530",
+      "id": "f4536fc4-d430-4473-ac2a-2f8abfaaacb4",
+      "name": "Handcrafted Steel Chair",
+      "price": "914.00",
+      "createdAt": 1639570862033
+    },
+    {
+      "categoryId": "6fb109fc-2995-42f9-a5cd-51b3ba498530",
+      "id": "7ab29afb-4a33-4f05-81b3-a0dbe18b503b",
+      "name": "Handcrafted Fresh Fish",
+      "price": "621.00",
+      "createdAt": 1639570862033
+    },
+    {
+      "categoryId": "6fb109fc-2995-42f9-a5cd-51b3ba498530",
+      "id": "d0100480-ecce-4007-bebf-64a87b569496",
+      "name": "Handmade Fresh Pants",
+      "price": "503.00",
+      "createdAt": 1639570862033
+    }
+  ]
+}
