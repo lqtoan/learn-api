@@ -1,11 +1,18 @@
 @baseUrl=http://localhost:3000/api
+@nameSource=products
 
-#
-GET {{baseUrl}}/products
+# Get All
+GET {{baseUrl}}/{{nameSource}}
 ###
-#
-GET {{baseUrl}}/products?price_lte=200
+# Get All include parent
+GET {{baseUrl}}/{{nameSource}}?_expand=category
 ###
-#
-GET {{baseUrl}}/products?_page=1&_limit=8
+# # Pagination, page default is 1, limit default is 8
+GET {{baseUrl}}/{{nameSource}}?_page=1&_limit=8
+###
+# Get with parent like somethings
+GET {{baseUrl}}/{{nameSource}}?categoryId_like=1
+###
+# Filter ans sort
+GET {{baseUrl}}/{{nameSource}}?price_lte=200&_sort=price&_order=asc
 ###

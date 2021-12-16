@@ -1,5 +1,12 @@
 @baseUrl=http://localhost:3000/api
+@nameSource=categories
 
-#
-GET {{baseUrl}}/categories
+# Get All
+GET {{baseUrl}}/{{nameSource}}
+###
+# Get All include children
+GET {{baseUrl}}/{{nameSource}}?_embed=products
+###
+# Pagination, page default is 1, limit default is 8
+GET {{baseUrl}}/{{nameSource}}?_page=1
 ###
