@@ -49,7 +49,7 @@ router.render = (req, res) => {
 };
 
 // Use default router
-server.use(router);
+server.use('/api', router);
 
 // Start server
 const PORT = process.env.PORT || 3000;
