@@ -32,8 +32,7 @@ const randomProductList = (categoryList) => {
         name: faker.commerce.productName(),
         price: Number.parseFloat(faker.commerce.price()),
         createdAt: Date.now(),
-        imgUrl:
-          'https://picsum.photos/320/160/',
+        imgUrl: '',
       };
       productList.push(product);
     });
