@@ -32,7 +32,8 @@ const randomProductList = (categoryList) => {
         name: faker.commerce.productName(),
         price: Number.parseFloat(faker.commerce.price()),
         createdAt: Date.now(),
-        imgUrl: faker.image.image(320, 160),
+        imgUrl:
+          'https://source.unsplash.com/random/320x160/',
       };
       productList.push(product);
     });
