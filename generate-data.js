@@ -4,7 +4,7 @@ const fs = require('fs');
 faker.locale = 'vi';
 
 const randomCategoryList = (n) => {
-  if (n <= 0) return [];
+  // if (n <= 0) return [];
   const categoryList = [];
 
   Array.from(new Array(n)).forEach(() => {
@@ -43,7 +43,7 @@ const randomProductList = (categoryList) => {
 
 (() => {
   // random data
-  const categoryList = randomCategoryList(Math.floor(Math.random() * 10) + 2);
+  const categoryList = randomCategoryList(Math.floor(Math.random() * 7) + 4);
   const productList = randomProductList(categoryList);
 
   // prepare db object
