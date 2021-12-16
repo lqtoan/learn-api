@@ -28,7 +28,7 @@ const randomProductList = (categoryList) => {
     Array.from(new Array(numberOfProducts)).forEach(() => {
       const product = {
         categoryId: category.id,
-        id: faker.datatype.uuid(),
+        id: faker.datatype.number(),
         name: faker.commerce.productName(),
         price: Number.parseFloat(faker.commerce.price()),
         createdAt: Date.now(),
