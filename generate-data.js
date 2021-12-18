@@ -33,7 +33,7 @@ const randomProductList = (categoryList) => {
         price: Number.parseFloat(faker.commerce.price()),
         description: faker.commerce.productDescription(),
         createdAt: Date.now(),
-        imgUrl: faker.image.unsplash.image().concat('/', faker.datatype.number()),
+        imgUrl: 'https://source.unsplash.com/random/'.concat(faker.datatype.number()),
       };
       productList.push(product);
     });
