@@ -4,7 +4,6 @@ const fs = require('fs');
 faker.locale = 'vi';
 
 const randomCategoryList = (n) => {
-  // if (n <= 0) return [];
   const categoryList = [];
 
   Array.from(new Array(n)).forEach(() => {
@@ -30,7 +29,6 @@ const randomProductList = (categoryList) => {
         id: faker.datatype.number(),
         name: faker.commerce.productName(),
         price: Number.parseFloat(faker.commerce.price()),
-        // description: faker.commerce.productDescription(),
         createdAt: Date.now(),
         imgUrl: 'https://source.unsplash.com/random/'.concat(
           faker.datatype.number()
