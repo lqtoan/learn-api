@@ -33,7 +33,9 @@ const randomProductList = (categoryList) => {
         price: Number.parseFloat(faker.commerce.price()),
         description: faker.commerce.productDescription(),
         createdAt: Date.now(),
-        imgUrl: 'https://source.unsplash.com/random/'.concat(faker.datatype.number()),
+        imgUrl: 'https://source.unsplash.com/random/'.concat(
+          faker.datatype.number()
+        ),
       };
       productList.push(product);
     });
@@ -44,7 +46,7 @@ const randomProductList = (categoryList) => {
 
 (() => {
   // random data
-  const categoryList = randomCategoryList(Math.ceil(Math.random() * 60) + 40);
+  const categoryList = randomCategoryList(Math.ceil(Math.random() * 12) + 8);
   const productList = randomProductList(categoryList);
 
   // prepare db object
