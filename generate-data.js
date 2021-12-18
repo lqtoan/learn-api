@@ -15,16 +15,15 @@ const randomCategoryList = (n) => {
     };
     categoryList.push(category);
   });
-
+  // 
   return categoryList;
 };
 
 const randomProductList = (categoryList) => {
-  // if (numberOfProducts <= 0) return [];
   const productList = [];
 
   for (const category of categoryList) {
-    let numberOfProducts = Math.floor(Math.random() * 2500);
+    let numberOfProducts = Math.floor(Math.random() * 10000);
     Array.from(new Array(numberOfProducts)).forEach(() => {
       const product = {
         categoryId: category.id,
@@ -40,13 +39,13 @@ const randomProductList = (categoryList) => {
       productList.push(product);
     });
   }
-
+  //
   return productList;
 };
 
 (() => {
   // random data
-  const categoryList = randomCategoryList(Math.ceil(Math.random() * 15) + 4);
+  const categoryList = randomCategoryList(Math.ceil(Math.random() * 11) + 8);
   const productList = randomProductList(categoryList);
 
   // prepare db object
