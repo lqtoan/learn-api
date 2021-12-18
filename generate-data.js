@@ -15,7 +15,7 @@ const randomCategoryList = (n) => {
     };
     categoryList.push(category);
   });
-  // 
+  //
   return categoryList;
 };
 
@@ -23,14 +23,14 @@ const randomProductList = (categoryList) => {
   const productList = [];
 
   for (const category of categoryList) {
-    let numberOfProducts = Math.floor(Math.random() * 10000);
+    let numberOfProducts = Math.floor(Math.random() * 100000);
     Array.from(new Array(numberOfProducts)).forEach(() => {
       const product = {
         categoryId: category.id,
         id: faker.datatype.number(),
         name: faker.commerce.productName(),
         price: Number.parseFloat(faker.commerce.price()),
-        description: faker.commerce.productDescription(),
+        // description: faker.commerce.productDescription(),
         createdAt: Date.now(),
         imgUrl: 'https://source.unsplash.com/random/'.concat(
           faker.datatype.number()
@@ -45,7 +45,7 @@ const randomProductList = (categoryList) => {
 
 (() => {
   // random data
-  const categoryList = randomCategoryList(Math.ceil(Math.random() * 11) + 8);
+  const categoryList = randomCategoryList(Math.ceil(Math.random() * 9) + 10);
   const productList = randomProductList(categoryList);
 
   // prepare db object
