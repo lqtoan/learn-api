@@ -28,9 +28,7 @@ const randomProductList = (categoryList) => {
         categoryId: category.id,
         id: faker.datatype.number(),
         name: faker.commerce.productName(),
-        price: Number.parseFloat(
-          faker.commerce.price(1, 100000) * 1000
-        ).toLocaleString('it-IT', { style: 'currency', currency: 'VND' }),
+        price: Number.parseFloat(faker.commerce.price(1, 100000) * 1000),
         description: faker.commerce.productDescription(),
         createdAt: Date.now(),
         imgUrl: 'https://source.unsplash.com/random/'.concat(
