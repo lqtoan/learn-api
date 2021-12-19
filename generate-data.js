@@ -22,13 +22,17 @@ const randomProductList = (categoryList) => {
   const productList = [];
 
   for (const category of categoryList) {
-    let numberOfProducts = Math.floor(Math.random() * 100000);
+    let numberOfProducts = Math.floor(Math.random() * 25000);
     Array.from(new Array(numberOfProducts)).forEach(() => {
       const product = {
         categoryId: category.id,
         id: faker.datatype.number(),
         name: faker.commerce.productName(),
-        price: Number.parseFloat(faker.commerce.price()),
+        price: Number.parseFloat(faker.commerce.price(1000, 100000000)).toLocaleString(
+          'it-IT',
+          { style: 'currency', currency: 'VND' }
+        ),
+        description: faker.commerce.productDescription(),
         createdAt: Date.now(),
         imgUrl: 'https://source.unsplash.com/random/'.concat(
           faker.datatype.number()
