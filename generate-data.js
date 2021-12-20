@@ -3,10 +3,10 @@ const fs = require('fs');
 
 faker.locale = 'vi';
 
-const randomCategoryList = (n) => {
+const randomCategoryList = (numberOfCategories) => {
   const categoryList = [];
 
-  Array.from(new Array(n)).forEach(() => {
+  Array.from(new Array(numberOfCategories)).forEach(() => {
     const category = {
       id: faker.datatype.number(),
       name: faker.commerce.department(),
@@ -44,7 +44,7 @@ const randomProductList = (categoryList) => {
 
 (() => {
   // random data
-  const categoryList = randomCategoryList(Math.ceil(Math.random() * 6) + 8);
+  const categoryList = randomCategoryList(Math.floor(Math.random() * 10) + 5);
   const productList = randomProductList(categoryList);
 
   // prepare db object
@@ -53,7 +53,7 @@ const randomProductList = (categoryList) => {
     products: productList,
   };
 
-  // write db object db.json
+  // write db object to db.json
   fs.writeFile('db.json', JSON.stringify(db), () => {
     console.log('db.json written');
   });
