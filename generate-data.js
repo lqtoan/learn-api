@@ -44,7 +44,7 @@ const randomProductList = (categoryList) => {
 
 (() => {
   // random data
-  const categoryList = randomCategoryList(Math.floor(Math.random() * 3) + 2);
+  const categoryList = randomCategoryList(Math.floor(Math.random() * 8) + 2);
   const productList = randomProductList(categoryList);
 
   // prepare db object
