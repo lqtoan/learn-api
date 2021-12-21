@@ -5,7 +5,7 @@
 GET {{baseUrl}}/{{nameSource}}
 ###
 # Find a product
-GET {{baseUrl}}/{{nameSource}}?name_like=pizza
+GET {{baseUrl}}/{{nameSource}}?_expand=category&name_like=pizza
 ###
 # Get product by id
 GET {{baseUrl}}/{{nameSource}}/48003
