@@ -7,6 +7,9 @@ GET {{baseUrl}}/{{nameSource}}
 # Get All include children
 GET {{baseUrl}}/{{nameSource}}?_embed=products
 ###
+# Get All include children
+GET {{baseUrl}}/{{nameSource}}?_embed=products&id=11726
+###
 # Pagination, page default is 1, limit default is 8
 GET {{baseUrl}}/{{nameSource}}?_page=1
 ###

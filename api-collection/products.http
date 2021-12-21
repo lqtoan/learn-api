@@ -16,8 +16,8 @@ GET {{baseUrl}}/{{nameSource}}?_expand=category
 # Get All product by category id
 GET {{baseUrl}}/{{nameSource}}?category.id=18458
 ###
-# Get product by category id and id
-GET {{baseUrl}}/{{nameSource}}?_expand=category&categoryId_like=18458&id=28677
+# Get product by category id 
+GET {{baseUrl}}/{{nameSource}}?_expand=category&categoryId=11726
 ###
 # # Pagination, page default is 1, limit default is 8
 GET {{baseUrl}}/{{nameSource}}?_page=1&_limit=8
