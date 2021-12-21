@@ -22,7 +22,7 @@ const randomProductList = (categoryList) => {
   const productList = [];
 
   for (const category of categoryList) {
-    let numberOfProducts = Math.floor(Math.random() * 100);
+    let numberOfProducts = Math.floor(Math.random() * 10000);
     Array.from(new Array(numberOfProducts)).forEach(() => {
       const product = {
         categoryId: category.id,
