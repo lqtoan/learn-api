@@ -15,7 +15,8 @@
   "author": "Toan Le",
   "license": "MIT",
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "sass": "^1.45.1"
   },
   "dependencies": {
     "faker": "^5.5.3",

@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  padding: 1rem;
+  font-family: "Quicksand", sans-serif;
+}
+body p {
+  margin: 0.25rem 0;
+}
+body ul {
+  font-size: 0.75rem;
+  width: 100%;
+  padding: 1rem;
+  background: #ccc;
+  border-radius: 0.25rem;
+}
+body ul li:not(:last-of-type) {
+  margin-bottom: 0.5rem;
+}
+body ul li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body ul li p {
+  display: inline;
+  margin: 0;
+  margin-right: 1rem;
+}
+body ul li a {
+  padding: 0.5rem 0.25rem;
+  background: #4848c2;
+  color: white;
+  width: 75px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  opacity: 0.7;
+}
+body ul li a:hover {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=style.css.map */
