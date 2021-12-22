@@ -31,7 +31,7 @@ const randomProductList = (categoryList) => {
         price: Number.parseFloat(faker.commerce.price(1, 100000) * 1000),
         description: faker.commerce.productDescription(),
         createdAt: Date.now(),
-        imgUrl: 'https://source.unsplash.com/random/320x160?sig='.concat(
+        imgUrl: 'https://source.unsplash.com/random/'.concat(
           faker.datatype.number()
         ),
       };
