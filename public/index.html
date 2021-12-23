@@ -21,27 +21,27 @@
       </li>
       <li>
         <p>?_expand=category&name_like=pizza</p>
-        <a href="?_expand=category&name_like=pizza">Send</a>
+        <a href="/api/products?_expand=category&name_like=pizza">Send</a>
       </li>
       <li>
         <p>?_expand=category</p>
-        <a href="?_expand=category">Send</a>
+        <a href="/api/products?_expand=category">Send</a>
       </li>
       <li>
         <p>?category.id=&lt;id&gt;</p>
-        <a href="?category.id=&lt;id&gt;">Send</a>
+        <a href="/api/products?category.id=&lt;id&gt;">Send</a>
       </li>
       <li>
         <p>?_page=1&_limit=8</p>
-        <a href="?_page=1&_limit=8">Send</a>
+        <a href="/api/products?_page=1&_limit=8">Send</a>
       </li>
       <li>
         <p>?categoryId_like=1</p>
-        <a href="?categoryId_like=1">Send</a>
+        <a href="/api/products?categoryId_like=1">Send</a>
       </li>
       <li>
         <p>?price_lte=200&_sort=price&_order=asc</p>
-        <a href="?price_lte=200&_sort=price&_order=asc">Send</a>
+        <a href="/api/products?price_lte=200&_sort=price&_order=asc">Send</a>
       </li>
     </ul>
     <p class"headlinee">Category Collection</p>
@@ -52,15 +52,11 @@
       </li>
       <li>
         <p>?_embed=products</p>
-        <a href="?_embed=products">Send</a>
+        <a href="/api/categories?_embed=products">Send</a>
       </li>
       <li>
         <p>?_embed=products&id=11726</p>
-        <a href="?_embed=products&id=11726">Send</a>
-      </li>
-      <li>
-        <p>/api/products</p>
-        <a href="/api/products">Send</a>
+        <a href="/api/categories?_embed=products&id=11726">Send</a>
       </li>
     </ul>
     <script src="../index.js"></script>
