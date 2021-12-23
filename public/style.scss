@@ -25,6 +25,7 @@ body {
     li {
       list-style: none;
       display: flex;
+      flex-flow: wrap;
       justify-content: space-between;
       align-items: center;
       p {
@@ -36,7 +37,7 @@ body {
         padding: 0.5rem 0.25rem;
         background: rgb(72, 72, 194);
         color: white;
-        width: 75px;
+        min-width: 75px;
         display: block;
         text-decoration: none;
         text-align: center;
@@ -46,6 +47,17 @@ body {
       }
       a:hover {
         opacity: 1;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  body {
+    ul {
+      li {
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: flex-start;
       }
     }
   }
