@@ -22,7 +22,7 @@ const randomProductList = (categoryList) => {
   const productList = [];
 
   for (const category of categoryList) {
-    let numberOfProducts = Math.floor(Math.random() * 10000);
+    let numberOfProducts = Math.floor(Math.random() * 1000);
     Array.from(new Array(numberOfProducts)).forEach(() => {
       const product = {
         categoryId: category.id,
@@ -44,7 +44,7 @@ const randomProductList = (categoryList) => {
 
 (() => {
   // random data
-  const categoryList = randomCategoryList(Math.floor(Math.random() * 8) + 2);
+  const categoryList = randomCategoryList(Math.floor(Math.random() * 6) + 4);
   const productList = randomProductList(categoryList);
 
   // prepare db object
