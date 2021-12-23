@@ -24,29 +24,29 @@ server.use((req, res, next) => {
 });
 
 // Custom output for LIST with pagination
-router.render = (req, res) => {
-  // Check GET with pagination
-  // If yes, custom output
-  const headers = res.getHeaders();
+// router.render = (req, res) => {
+//   // Check GET with pagination
+//   // If yes, custom output
+//   const headers = res.getHeaders();
 
-  const totalCountHeader = headers['x-total-count'];
-  if (req.method === 'GET' && totalCountHeader) {
-    const queryParams = queryString.parse(req._parsedUrl.query);
-    const result = {
-      data: res.locals.data,
-      pagination: {
-        _page: Number.parseInt(queryParams._page) || 1,
-        _limit: Number.parseInt(queryParams._limit) || 8,
-        _totalRows: Number.parseInt(totalCountHeader),
-      },
-    };
+//   const totalCountHeader = headers['x-total-count'];
+//   if (req.method === 'GET' && totalCountHeader) {
+//     const queryParams = queryString.parse(req._parsedUrl.query);
+//     const result = {
+//       data: res.locals.data,
+//       pagination: {
+//         _page: Number.parseInt(queryParams._page) || 1,
+//         _limit: Number.parseInt(queryParams._limit) || 8,
+//         _totalRows: Number.parseInt(totalCountHeader),
+//       },
+//     };
 
-    return res.jsonp(result);
-  }
+//     return res.jsonp(result);
+//   }
 
-  // Otherwise, keep default behavior
-  res.jsonp(res.locals.data);
-};
+//   // Otherwise, keep default behavior
+//   res.jsonp(res.locals.data);
+// };
 
 // Use default router
 server.use('/api', router);
